@@ -1,0 +1,93 @@
+html {
+  background: url(backgroundimg.png) no-repeat center center;
+  background-size: cover;
+  background-color: #fcebd8;
+}
+body {
+  box-sizing: border-box;
+  color: #642900;
+  font-family: "Fira Sans", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+.header {
+  font-size: 26px;
+  font-family: "Shadows Into Light", cursive;
+  text-transform: uppercase;
+}
+
+.pitanje-odgovor-div {
+  width: 500px;
+  border: 4px solid #ec8a4476;
+  background-color: #fbf5ee;
+  border-radius: 10px;
+  margin: 20px;
+  padding: 30px;
+}
+
+.div-odgovori-flex {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.hidden-btns {
+  display: hidden;
+}
+
+#submit-btn,
+#nova-pitanja-btn {
+  background-color: #2e9a6d;
+  color: #fbf5ee;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 10px 20px;
+  margin-bottom: 25px;
+  border-radius: 5px;
+  border: none;
+}
+
+#nova-pitanja-btn {
+  background-color: #ec8944;
+}
+
+#submit-btn:hover {
+  background-color: #3cb583d2;
+  cursor: pointer;
+}
+#nova-pitanja-btn:hover {
+  background-color: #642a00a7;
+  cursor: pointer;
+}
+
+.paragraf-tacno {
+  color: #2e9a6d;
+}
+
+.paragraf-netacno {
+  color: #dc4f38;
+}
+
+.pozadina-tacno {
+  color: #fbf5ee;
+  border-color: #2e9a6d;
+  background-color: #2e9a6dea;
+}
+.pozadina-netacno {
+  color: #fbf5ee;
+  border-color: #dc4f38;
+  background-color: #dc4e38e7;
+}
+
+@media only screen and (max-width: 600px) {
+  .header {
+    font-size: 18px;
+  }
+  .pitanje-odgovor-div {
+    width: 220px;
+  }
+}
